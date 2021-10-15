@@ -1,0 +1,284 @@
+<template >
+  <div id="home">
+    <Header />
+    <div class="logo">
+      (Logo)<br>
+      Dobrodošli
+    </div>
+    <div style="background-color:#fff">
+        <div class="slider">
+        <Slider />
+        </div>
+    </div>
+    <div class="content">
+      <hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div class="three-p">
+              <p class="p1">Više od</p>
+                30 
+              <p class="p1">izgrađenih infrastruktura i mreža...</p>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="three-p">
+              <p class="p1">...na više od</p>
+                25 
+              <p class="p1">lokacija širom Srbije...</p>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="three-p">
+              <p class="p1">...sa iskustvom od</p>
+                15 
+              <p class="p1">godina rada u građevinskoj industriji</p>
+            </div>
+          </div>
+          <div style="text-align:ceneter;font-size:1.7em;color: #444;">...i nastavljamo da brojimo...</div>
+        </div>
+      </div>
+      <hr>
+    </div>
+        <div class="transparent-div">
+          <div class="container">
+            <div class="row" style="margin-top:110px">
+              <div class="col-sm-12" style="color:#fff;text-align:right;">
+                <h1 style="font-size:2.5em;padding-bottom:70px;">Više od 5000km ugrađene gasne i vodovodne mreže širom Srbije</h1>
+              </div>
+                
+  
+              <div class="col-sm" style="color:#fff;text-align:right;margin:10px">
+                <router-link to="/reference" ><button class="portfolio-button"><strong>Reference</strong></button></router-link>
+                <br>
+                <br>
+                <router-link to="/about" ><button class="portfolio-button"><strong>Kontakt</strong></button></router-link>
+              </div>
+            </div>
+          </div>
+        </div>
+    <div class="content">
+      <hr>
+      <div class="container">
+        <br>
+        <div style="text-align:ceneter;font-size:2.5em;color: #444;">Nudimo</div>
+        <div class="row" >
+          <div class="col-sm">
+            <div class="three-p">
+              <img :src="s1" alt="" class="offerLogo">
+              <h1 class="offerTitle">Efikasnost</h1>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="three-p">
+              <img :src="s2" alt="" class="offerLogo">
+              <h1 class="offerTitle">Sigurnost</h1>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="three-p">
+              <img :src="s3" alt="" class="offerLogo">
+              <h1 class="offerTitle">Kvalitet</h1>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="left-p">
+              One of three columns
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="right-p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet urna vel metus suscipit, in interdum tortor dapibus. Suspendisse faucibus ante vitae euismod volutpat. Sed quis purus ac nibh hendrerit lobortis. Sed consequat, nisl non convallis aliquam, enim risus scelerisque orci, nec finibus lorem nisl elementum ipsum. Aliquam pretium elit eget sem efficitur, a tristique arcu aliquam. Curabitur suscipit purus vitae dolor pellentesque gravida. Maecenas mi justo, laoreet sed feugiat quis, efficitur vitae libero. Pellentesque dictum, erat sed varius volutpat, mi ante consectetur enim, ac gravida purus risus ac augue. Morbi semper metus a aliquet faucibus. Donec ultricies eget nisl non condimentum. Nunc porttitor metus sem, luctus venenatis urna dignissim vitae. Suspendisse euismod placerat turpis, eu pellentesque leo aliquet at. In eu posuere dui. Aliquam semper mi ac euismod rhoncus. Nullam quis massa quis sem laoreet suscipit a a arcu. Cras dignissim nibh ultricies justo laoreet rhoncus.
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="left-p">
+              One of three columns
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="right-p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet urna vel metus suscipit, in interdum tortor dapibus. Suspendisse faucibus ante vitae euismod volutpat. Sed quis purus ac nibh hendrerit lobortis. Sed consequat, nisl non convallis aliquam, enim risus scelerisque orci, nec finibus lorem nisl elementum ipsum. Aliquam pretium elit eget sem efficitur, a tristique arcu aliquam. Curabitur suscipit purus vitae dolor pellentesque gravida. Maecenas mi justo, laoreet sed feugiat quis, efficitur vitae libero. Pellentesque dictum, erat sed varius volutpat, mi ante consectetur enim, ac gravida purus risus ac augue. Morbi semper metus a aliquet faucibus. Donec ultricies eget nisl non condimentum. Nunc porttitor metus sem, luctus venenatis urna dignissim vitae. Suspendisse euismod placerat turpis, eu pellentesque leo aliquet at. In eu posuere dui. Aliquam semper mi ac euismod rhoncus. Nullam quis massa quis sem laoreet suscipit a a arcu. Cras dignissim nibh ultricies justo laoreet rhoncus.
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <Footer />
+  </div>
+</template>
+
+<script>
+//components
+import Slider from '@/components/Slider.vue'
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
+//pictures
+import Slika1 from '@/assets/images/efficiency.png';
+import Slika2 from '@/assets/images/security.png';
+import Slika3 from '@/assets/images/quality.png';
+
+
+export default {
+  name: 'Home',
+  data:() => {
+    return {
+      mobileView: true,
+      showNav: true,
+      s1:Slika1,
+      s2:Slika2,
+      s3:Slika3,
+    }
+  },
+  components: {
+    Slider,
+    Header,
+    Footer,
+  },
+  methods:{
+    handleView(){
+      this.mobileView = window.innerWidth <= 990;
+    },
+    toggleShowNav(){
+      this.showNav=!this.showNav;
+    }
+  },
+  
+  created(){
+    this.handleView();
+  }
+}
+</script>
+<style>
+
+
+@import url("https://use.fontawesome.com/releases/v5.9.0/css/all.css");
+* {
+  font-size: 1rem;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  background-color: #444;
+}
+#home {
+  width: 100%;
+  height: 100%;
+  
+}
+.content {
+  position: relative;
+  width: 100%;
+  padding:20px;
+  background-color: #fff;
+}
+
+.slider{
+  width: calc(100% );
+  height: 410px;
+  padding: 5px;
+  background: linear-gradient(#444 ,#fff);
+  overflow: hidden;
+
+}
+.transparent-div{
+  height:500px;
+  width:100%;
+  background-color:transparent
+}
+.row{
+  width:100%;
+  margin-left:0px
+}
+.left-p{
+  text-align: justify;
+  text-justify: inter-cluster;
+  font-size:2em;
+  font-style: italic;
+  margin-top:50%;
+  border-radius: 10px;
+  padding: 50px;
+}
+.right-p{
+  text-align: justify;
+  text-justify: inter-cluster;
+  font-size:1.1em;
+  font-weight: 600;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.open {
+  transform: translateX(150px);
+}
+.logo{
+  position:relative;
+  width: 100% ;
+  background: #444 ;
+  background: linear-gradient(rgba(255,0,0,0),#444);
+  color:#FFF;
+  height:300px;
+  font-size:6vh;
+  padding-top:100px;
+  object-fit: cover;
+  
+}
+.title{
+  margin-top:100px;
+}
+.three-p{
+  text-align: justify;
+  font-size:6em;
+  margin-top:20px;
+  border-radius: 10px;
+  padding: 50px;
+  color: #FF5858;
+  text-align: center;
+}
+hr{
+  border:1px solid #ffae00;
+}
+.p1{
+  text-align: center;
+  color: #444;
+  font-size: 0.2em;
+}
+.offerLogo{
+  width: 175px;
+  height: 175px;
+  object-fit: contain;
+}
+.offerTitle{
+  margin-top:50px;
+  color:#444;
+  font-size:0.5em
+}
+.portfolio-button{
+  width:120px;
+  height:60px;
+  background-color: #444;
+  border-bottom: 3px solid transparent;
+  border-bottom-color: #FF5858;
+  transition: 0.4s;
+  color:#fff;
+  border-radius: 8px;
+  
+}
+.portfolio-button.active,
+.portfolio-button:hover
+{
+  background-color: transparent;
+  color:#fff;
+  border-bottom-color: #FF5858;
+  border-color: #fff;
+  
+}
+
+</style>

@@ -1,28 +1,37 @@
+
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view/>
   </div>
 </template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
 <style>
+body {
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeInAnimation {
+  0%    {
+        opacity: 0;
+        }
+  100%  {
+        opacity: 1;
+        }
+  }
+@font-face {
+  font-family: "Autobus";
+  src: local("Autobus"),
+  url(./assets/fonts/Autobusbold.ttf) format("truetype");
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Autobus";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #444;
+  background-image: url("assets/images/gasovod.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 </style>
