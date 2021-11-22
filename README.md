@@ -1,4 +1,4 @@
-# template
+# Voka-Kop
 
 ## Project setup
 ```
