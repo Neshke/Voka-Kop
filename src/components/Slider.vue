@@ -54,7 +54,7 @@ export default {
 }
 .VueCarousel-slide {
   position: relative;
-  background: linear-gradient(#444,#fff);
+  background: linear-gradient(#231f20,#fff);
   color: #fff;
   width: 100%;
   z-index: 1;

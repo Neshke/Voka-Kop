@@ -47,10 +47,10 @@ export default {
 #nav-pc .menu-item {
   position: relative;
   text-align: center;
-  color:#ffae00;
-  background-color: #444;
+  color:#feca0a;
+  background-color: #231f20;
   border-bottom: 3px solid transparent;
-  border-bottom-color: #ffae00;
+  border-bottom-color: #feca0a;
   height:57px;
   padding:15px;
   transition: 0.4s;
@@ -60,7 +60,7 @@ export default {
   
   text-align: center;
   color:#fff;
-  background-color: #444;
+  background-color: #231f20;
   border-bottom: 3px solid transparent;
   border-bottom-color: #FF5858;
   border-bottom-left-radius: 8px;
@@ -73,7 +73,7 @@ export default {
   text-align: center;
   display: flex;
   color:#fff;
-  background-color: #444;
+  background-color: #231f20;
   border-bottom: 3px solid transparent;
   border-bottom-color: #FF5858;
   border-bottom-right-radius: 8px;
@@ -84,18 +84,18 @@ export default {
 
 #nav-pc .menu-item.active,
 #nav-pc .menu-item:hover {
-  color:#444;
-  background-color: #ffae00;
+  color:#231f20;
+  background-color: #feca0a;
   border-bottom-color: #FFF;
 }
 #nav-pc .menu-item-first:hover  {
   background-color: #fff;
-  color:#444;
+  color:#231f20;
   border-bottom-color: #FF5858;
 }
 #nav-pc .menu-item-last:hover {
   background-color: #fff;
-  color:#444;
+  color:#231f20;
   border-bottom-color: #FF5858;
 }
 a:hover, a:visited, a:link, a:active

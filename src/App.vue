@@ -28,7 +28,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #444;
+  color: #231f20;
   background-image: url("assets/images/gasovod.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;

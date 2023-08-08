@@ -2,8 +2,8 @@
   <div id="home">
     <Header />
     <div class="logo">
-      (Logo)<br>
-      Dobrodošli
+      <img src="../assets/images/logo.png" alt="logo" class="logo-img">
+      <p class="mt-3">Dobrodošli</p>
     </div>
     <div style="background-color:#fff">
         <div class="slider">
@@ -30,12 +30,12 @@
           </div>
           <div class="col-sm">
             <div class="three-p">
-              <p class="p1">...sa iskustvom od</p>
+              <p class="p1">...kao i sa iskustvom više od</p>
                 15 
               <p class="p1">godina rada u građevinskoj industriji</p>
             </div>
           </div>
-          <div style="text-align:ceneter;font-size:1.7em;color: #444;">...i nastavljamo da brojimo...</div>
+          <div style="text-align:ceneter;font-size:1.7em;color: #231f20;">...i nastavljamo da brojimo...</div>
         </div>
       </div>
       <hr>
@@ -61,7 +61,7 @@
       <hr>
       <div class="container">
         <br>
-        <div style="text-align:ceneter;font-size:2.5em;color: #444;">Nudimo</div>
+        <div style="text-align:ceneter;font-size:2.5em;color: #231f20;">Nudimo</div>
         <div class="row" >
           <div class="col-sm">
             <div class="three-p">
@@ -84,23 +84,6 @@
           <hr>
         </div>
         <div class="row">
-          <div class="col-sm">
-            <div class="left-p">
-              One of three columns
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="right-p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet urna vel metus suscipit, in interdum tortor dapibus. Suspendisse faucibus ante vitae euismod volutpat. Sed quis purus ac nibh hendrerit lobortis. Sed consequat, nisl non convallis aliquam, enim risus scelerisque orci, nec finibus lorem nisl elementum ipsum. Aliquam pretium elit eget sem efficitur, a tristique arcu aliquam. Curabitur suscipit purus vitae dolor pellentesque gravida. Maecenas mi justo, laoreet sed feugiat quis, efficitur vitae libero. Pellentesque dictum, erat sed varius volutpat, mi ante consectetur enim, ac gravida purus risus ac augue. Morbi semper metus a aliquet faucibus. Donec ultricies eget nisl non condimentum. Nunc porttitor metus sem, luctus venenatis urna dignissim vitae. Suspendisse euismod placerat turpis, eu pellentesque leo aliquet at. In eu posuere dui. Aliquam semper mi ac euismod rhoncus. Nullam quis massa quis sem laoreet suscipit a a arcu. Cras dignissim nibh ultricies justo laoreet rhoncus.
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm">
-            <div class="left-p">
-              One of three columns
-            </div>
-          </div>
           <div class="col-sm">
             <div class="right-p">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet urna vel metus suscipit, in interdum tortor dapibus. Suspendisse faucibus ante vitae euismod volutpat. Sed quis purus ac nibh hendrerit lobortis. Sed consequat, nisl non convallis aliquam, enim risus scelerisque orci, nec finibus lorem nisl elementum ipsum. Aliquam pretium elit eget sem efficitur, a tristique arcu aliquam. Curabitur suscipit purus vitae dolor pellentesque gravida. Maecenas mi justo, laoreet sed feugiat quis, efficitur vitae libero. Pellentesque dictum, erat sed varius volutpat, mi ante consectetur enim, ac gravida purus risus ac augue. Morbi semper metus a aliquet faucibus. Donec ultricies eget nisl non condimentum. Nunc porttitor metus sem, luctus venenatis urna dignissim vitae. Suspendisse euismod placerat turpis, eu pellentesque leo aliquet at. In eu posuere dui. Aliquam semper mi ac euismod rhoncus. Nullam quis massa quis sem laoreet suscipit a a arcu. Cras dignissim nibh ultricies justo laoreet rhoncus.
@@ -165,7 +148,7 @@ body {
   width: 100%;
   height: 100vh;
   padding: 0;
-  background-color: #444;
+  background-color: #231f20;
 }
 #home {
   width: 100%;
@@ -183,7 +166,7 @@ body {
   width: calc(100% );
   height: 410px;
   padding: 5px;
-  background: linear-gradient(#444 ,#fff);
+  background: linear-gradient(#231f20 ,#fff);
   overflow: hidden;
 
 }
@@ -195,15 +178,6 @@ body {
 .row{
   width:100%;
   margin-left:0px
-}
-.left-p{
-  text-align: justify;
-  text-justify: inter-cluster;
-  font-size:2em;
-  font-style: italic;
-  margin-top:50%;
-  border-radius: 10px;
-  padding: 50px;
 }
 .right-p{
   text-align: justify;
@@ -219,15 +193,23 @@ body {
   transform: translateX(150px);
 }
 .logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
   position:relative;
   width: 100% ;
-  background: #444 ;
-  background: linear-gradient(rgba(255,0,0,0),#444);
+  background: #231f20 ;
+  background: linear-gradient(rgba(255,0,0,0),#231f20 50%);
   color:#FFF;
   height:300px;
   font-size:6vh;
-  padding-top:100px;
-  object-fit: cover;
+
+}
+.logo-img{
+  width: 15rem;
+  height: 3rem;
+  object-fit: contain;
   
 }
 .title{
@@ -243,11 +225,11 @@ body {
   text-align: center;
 }
 hr{
-  border:1px solid #ffae00;
+  border:1px solid #feca0a;
 }
 .p1{
   text-align: center;
-  color: #444;
+  color: #231f20;
   font-size: 0.2em;
 }
 .offerLogo{
@@ -257,13 +239,13 @@ hr{
 }
 .offerTitle{
   margin-top:50px;
-  color:#444;
+  color:#231f20;
   font-size:0.5em
 }
 .portfolio-button{
   width:120px;
   height:60px;
-  background-color: #444;
+  background-color: #231f20;
   border-bottom: 3px solid transparent;
   border-bottom-color: #FF5858;
   transition: 0.4s;

@@ -36,7 +36,7 @@
    width: 100%;
    height: auto;
    background-color: #efefef;
-   color: #444;
+   color: #231f20;
    text-align: left;
 }
 .footer-p{

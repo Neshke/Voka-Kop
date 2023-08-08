@@ -39,19 +39,19 @@ export default {
 }
 #nav-mob .menu-item-mob {
   color: #fff;
-  background-color: #444;
+  background-color: #231f20;
   margin:auto;
   padding: 25px 20px;
   position: relative;
   text-align: center;
-  border-bottom: 3px solid  #ffae00;
+  border-bottom: 3px solid  #feca0a;
   transition: 0.4s;
   height: 70px;
 }
 #nav-mob .menu-item.active,
 #nav-mob .menu-item:hover {
   background-color: #fff;
-  border-bottom-color:  #ffae00;
+  border-bottom-color:  #feca0a;
 }
 #nav-mob .menu-item a {
   color: inherit;

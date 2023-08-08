@@ -53,7 +53,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma;
-  background-color: #444;
+  background-color: #231f20;
 }
 #header {
   position: relative;
@@ -68,7 +68,7 @@ body {
 }
 #navigation-icon {
   position:fixed;
-  background-color: #ffae00;
+  background-color: #feca0a;
   z-index: 100;
   width: 100%;
   text-align: left;

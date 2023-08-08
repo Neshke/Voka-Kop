@@ -173,7 +173,7 @@ body {
   height: 100%;
   padding: 0 ;
   font-family: "Segoe UI", Tahoma;
-  background-color: #444;
+  background-color: #231f20;
 }
 #reference {
   width: 100%;
@@ -197,7 +197,7 @@ body {
 .reference-logo{
   position:relative;
   width: 100% ;
-  background: linear-gradient(rgba(255,0,0,0),#444);
+  background: linear-gradient(rgba(255,0,0,0),#231f20);
   font-size:6vh;
   padding-top:100px;
   text-align: center;
@@ -209,7 +209,7 @@ body {
   width: 100% ;
   height: 320px;
   text-align: center;
-  background: linear-gradient(#444 15% ,#fff);
+  background: linear-gradient(#231f20 15% ,#fff);
 }
 br{
   border:1px solid #FF5858;
@@ -236,7 +236,7 @@ br{
 .display-image{
   width: 100%;
   border: 2px solid black;
-  background-color: #ffae00;
+  background-color: #feca0a;
   height: 400px;
   object-fit: contain;
   border-radius: 5px;
