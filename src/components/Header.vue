@@ -4,7 +4,7 @@
       <div class="top-bar">
         <div id="navigation-icon" v-if="mobileView"
           @click="showNav = !showNav; " :class="{'openNav':showNav}">
-          <MobileNav />
+          <MobileNav :key="mobileView"/>
           <i class="fas fa-bars"></i>
         </div>
         <Navbar v-if="!mobileView" />
@@ -17,10 +17,10 @@ import Navbar from '@/components/Navbar.vue'
 import MobileNav from '@/components/MobileNav.vue'
 
 export default {
-  name: 'Home',
+  name: 'Header',
   data:() => {
     return {
-      mobileView: true,
+      mobileView: false,
       showNav: false
     }
   },
@@ -28,14 +28,15 @@ export default {
     Navbar,
     MobileNav,
   },
-  methods:{
-    handleView(){
-      this.mobileView = window.innerWidth <= 990;
-    },
-  },
-  
   created(){
-    this.handleView();
+    // this.handleView();
+    window.addEventListener("resize", () => {
+    if (window.innerWidth < 900) {
+      this.mobileView = true
+     }else{
+      this.mobileView = false
+     }
+  })
   }
 }
 </script>
