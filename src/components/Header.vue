@@ -1,5 +1,9 @@
 <template>
     <div id ="header">
+      <div class="quick-info">
+        <a href="mailto:vokakop@gmail.com" class="quick-info-left">✉ vokakop@gmail.com</a>
+        <a href="tel:+38162281493" class="quick-info-right">☎ +381 62 281 493</a>
+      </div>
     <div class="content-header"  >
       <div class="top-bar">
         <div id="navigation-icon" v-if="mobileView"
@@ -62,6 +66,7 @@ body {
   color: #333;
   overflow: hidden;
   
+  z-index: 999;
 }
 .top-bar {
   width: 100%;
@@ -93,5 +98,23 @@ i {
 .titl{
   position:relative;
   text-align: center;
+}
+.quick-info{
+  position:fixed;
+  width: 100%;
+  height: 2.5rem;
+  background-color: #231f20;
+}
+.quick-info-left:link{
+  float: left;
+  color: white;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+.quick-info-right:link{
+  float: right;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  color: white;
 }
 </style>

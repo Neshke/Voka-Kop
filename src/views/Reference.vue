@@ -3,13 +3,14 @@
     <Header />
     <div class="reference-logo">
       Reference
-      <br>
-      <br>
-      <h2>Preko 500,000 km ugrađene vodovodne i gasne instalacije</h2>
     </div>
     <div class="contents">
       <div class="container" >
+        
+        <h1 class="my-4">GRAĐEVINSKA FIRMA VOKA KOP - REFERENCE</h1>
+        <p>Voka Kop doo je firma koja ima reference iz različitih oblasti građevinarstva. Naši klijenti i investitori su renomirani brendovi Srbije. Postanite i vi deo naše REFERENC liste.</p>
         <hr>
+        
         <div class="row" style="padding-top:0px" >
           <Carousel 
             :per-page="3" 
@@ -19,7 +20,7 @@
             :loop="true"
             :autoplayHoverPause="true"
             :autoplayTimeout="3000"
-            :navigationEnabled="true">
+            :navigationEnabled="false">
 
            <Slide class="Reference-slide" >
                   <img :src="slideOne" alt="" class="logoSlika" @click=" redirectOne">
@@ -30,56 +31,34 @@
            <Slide class="Reference-slide">
                   <img :src="slideThree" alt="" class="logoSlika" @click="redirectThree">
             </Slide>
+           <Slide class="Reference-slide">
+                  <img :src="slideEight" alt="" class="logoSlika" @click="redirectEight">
+            </Slide>
+          </Carousel>
+          <Carousel 
+            :per-page="3" 
+            :mouse-drag="true"
+            :paginationEnabled="false"
+            :autoplay="true"
+            :loop="true"
+            :autoplayHoverPause="true"
+            :autoplayTimeout="3000"
+            :navigationEnabled="false">
             <Slide class="Reference-slide">
                   <img :src="slideFour" alt="" class="logoSlika" @click="redirectFour">
             </Slide>
-          </Carousel>
-        </div>
-        <hr>
-        <h1>Čak i Više od Kvaliteta!</h1>
-        <div class="row" >
-          
-          <div class="display-image">
-            <div class="photoAlt"> {{displayPhotoAlt}}</div>
-            <img :src="displayPhoto" alt="" style="object-fit: contain; width:100%; height:90%" >
-          </div>
-        </div>
-        <br>
-        
-        <div class="row" >
-        <Carousel 
-            :per-page="5" 
-            :mouse-drag="true"
-            :paginationEnabled="false"
-            :loop="true"
-            :navigationEnabled="true">
-
-           <Slide class="Reference-slide" >
-                  <img :src="slideOne" alt="" id="display-menu" @click="changePictureOne">
-           </Slide>
-           <Slide class="Reference-slide">
-                 <img :src="slideTwo" alt="" id="display-menu"  @click="changePictureTwo">
-           </Slide>
-           <Slide class="Reference-slide">
-                  <img :src="slideThree" alt="" id="display-menu" @click="changePictureThree">
+            <Slide class="Reference-slide">
+                  <img :src="slideFive" alt="" class="logoSlika" @click="redirectFive">
             </Slide>
             <Slide class="Reference-slide">
-                  <img :src="slideFour" alt="" id="display-menu" @click="changePictureFour">
+                  <img :src="slideSix" alt="" class="logoSlika" @click="redirectSix">
+            </Slide>
+            <Slide class="Reference-slide">
+                  <img :src="slideSeven" alt="" class="logoSlika" @click="redirectSeven">
             </Slide>
           </Carousel>
         </div>
         <hr>
-        <div class="row" style="padding-top:0px" >
-          <div class="col-sm-6" style="text-align:right"><img :src="slika5" alt="" style="border-radius:10px;width:100%" ></div>
-          <div class="col-sm-6" style="text-align:left;padding:60px;">Građevinsko preduzeće "Voka Kop", sa sedištem u Smederevu je osnovano 2004. godine i već dugi niz godina posluje kao izvođač radova na različitim neurbanim i urbanim lokacijama širom Srbije. 
-            <br><br>Organizacija koja i dan danas uspešno posluje, opremljena je svim neophodnim tehničko-tehnološkim i ljudskim resursima kako bi radovi bili uspešno izvedeni. </div>
-        </div>
-        <br>
-        <div class="row" style="padding-top:0px" >
-          <div class="col-sm-6" style="text-align:right;padding:60px;">Građevinsko preduzeće "Voka Kop", sa sedištem u Smederevu je osnovano 2004. godine i već dugi niz godina posluje kao izvođač radova na različitim neurbanim i urbanim lokacijama širom Srbije. 
-            <br><br>Organizacija koja i dan danas uspešno posluje, opremljena je svim neophodnim tehničko-tehnološkim i ljudskim resursima kako bi radovi bili uspešno izvedeni. </div>
-          <div class="col-sm-6" style="text-align:left"><img :src="slika5" alt="" style="border-radius:10px;width:100%"></div>
-        </div>
       </div>
     </div>
     <Footer />
@@ -97,6 +76,10 @@ import Logo2 from '@/assets/images/promont.png';
 import Logo3 from '@/assets/images/millennium_logo.png';
 import Logo4 from '@/assets/images/setec.png';
 import Logo5 from '@/assets/images/workers.jpg';
+import Logo6 from '@/assets/images/gasInvest.jpg';
+import Logo7 from '@/assets/images/dmInvest.jpg';
+import Logo8 from '@/assets/images/kbv.png';
+import Logo9 from '@/assets/images/telefonkabl-logo.png';
 
 export default {
   name: 'Home',
@@ -108,6 +91,10 @@ export default {
       slideTwo:Logo2,
       slideThree:Logo3,
       slideFour:Logo4,
+      slideFive:Logo6,
+      slideSix:Logo7,
+      slideEight:Logo9,
+      slideSeven:Logo8,
       slika5:Logo5,
       displayPhoto:Logo1,
       displayPhotoAlt: "Prvi",
@@ -138,21 +125,17 @@ export default {
     redirectFour(){
       window.location.href = 'http://www.setec-ec.rs/';
     },
-    changePictureOne(){
-      this.displayPhoto = this.slideOne;
-      this.displayPhotoAlt= "Prvi";
+    redirectFive(){
+      window.location.href = 'https://gas-invest.ls.rs/rs/';
     },
-    changePictureTwo(){
-      this.displayPhoto = this.slideTwo;
-      this.displayPhotoAlt= "Drugi";
+    redirectSix(){
+      window.location.href = 'https://dminvest.rs/';
     },
-    changePictureThree(){
-      this.displayPhoto = this.slideThree;
-      this.displayPhotoAlt= "Treći";
+    redirectSeven(){
+      window.location.href = 'http://www.kbvdatacom.rs/sr/';
     },
-    changePictureFour(){
-      this.displayPhoto = this.slideFour;
-      this.displayPhotoAlt= "Cetvrti";
+    redirectEight(){
+      window.location.href = 'http://www.tkb.rs/';
     },
   },
   
@@ -229,17 +212,9 @@ br{
 .logoSlika{
   object-fit:contain;
   width:100%;
-  padding:5px;
-  height:100px;
+  padding:10px;
+  height:80px;
   cursor: pointer;
-}
-.display-image{
-  width: 100%;
-  border: 2px solid black;
-  background-color: #feca0a;
-  height: 400px;
-  object-fit: contain;
-  border-radius: 5px;
 }
 #display-menu{
   height:70px;
@@ -248,15 +223,5 @@ br{
   border: 2px solid black;
   border-radius: 5px;
   cursor: pointer;
-}
-.photoAlt{
-background-color:black;
-color:#fff;
-opacity: 0.5;
-width:100%;
-border-bottom-left-radius: 5px;
-border-bottom-right-radius: 5px;
-text-align: left;
-padding:5px;
 }
 </style>

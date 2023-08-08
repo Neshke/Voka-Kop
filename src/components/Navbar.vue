@@ -59,10 +59,10 @@ export default {
 #nav-pc .menu-item-first {
   
   text-align: center;
-  color:#fff;
+  color:#feca0a;
   background-color: #231f20;
   border-bottom: 3px solid transparent;
-  border-bottom-color: #FF5858;
+  border-bottom-color: #feca0a;
   border-bottom-left-radius: 8px;
   padding: 15px;
   transition: 0.4s;
@@ -72,10 +72,10 @@ export default {
   position: relative;
   text-align: center;
   display: flex;
-  color:#fff;
+  color:#feca0a;
   background-color: #231f20;
   border-bottom: 3px solid transparent;
-  border-bottom-color: #FF5858;
+  border-bottom-color: #feca0a;
   border-bottom-right-radius: 8px;
   padding: 15px 45px;
   transition: 0.4s;
@@ -86,17 +86,17 @@ export default {
 #nav-pc .menu-item:hover {
   color:#231f20;
   background-color: #feca0a;
-  border-bottom-color: #FFF;
+  border-bottom-color: #feca0a;
 }
 #nav-pc .menu-item-first:hover  {
-  background-color: #fff;
+  background-color: #feca0a;
   color:#231f20;
-  border-bottom-color: #FF5858;
+  border-bottom-color: #feca0a;
 }
 #nav-pc .menu-item-last:hover {
-  background-color: #fff;
+  background-color: #feca0a;
   color:#231f20;
-  border-bottom-color: #FF5858;
+  border-bottom-color: #feca0a;
 }
 a:hover, a:visited, a:link, a:active
 {

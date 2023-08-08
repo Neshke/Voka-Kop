@@ -6,8 +6,6 @@
     </div>
     <div class="contents">
       <div class="container" >
-        <hr>
-        <h1>Kako do nas?</h1><br>
         <div class="row">
             <div class="col-sm-6">
               <div class="col-sm-12" style="text-align:left; margin-left:20px;  "><h3>Kontakt detalji</h3></div><hr>

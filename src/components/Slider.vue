@@ -11,11 +11,17 @@
       <Slide class="VueCarousel-slide">
             <img :src="slideOne" alt="" id="slika" >
       </Slide>
-      <Slide class="VueCarousel-slide">
+      <Slide class="vueCarousel-slide">
             <img :src="slideTwo" alt="" id="slika">
       </Slide>
-      <Slide class="VueCarousel-slide">
+      <Slide class="vueCarousel-slide">
             <img :src="slideThree" alt="" id="slika">
+      </Slide>
+      <Slide class="vueCarousel-slide">
+            <img :src="slideThree" alt="" id="slika">
+      </Slide>
+      <Slide class="vueCarousel-slide">
+            <img :src="slideFour" alt="" id="slika">
       </Slide>
     </Carousel>
    
@@ -26,6 +32,7 @@ import { Carousel, Slide } from 'vue-carousel';
 import Slika1 from '@/assets/images/water 2.jpg';
 import Slika2 from '@/assets/images/water.jpg';
 import Slika3 from '@/assets/images/gasovod.jpg';
+import Cev2 from '@/assets/images/cev2.jpg';
 
 export default {
   
@@ -34,6 +41,7 @@ export default {
       slideOne:Slika1,
       slideTwo:Slika2,
       slideThree:Slika3,
+      slideFour:Cev2,
     }
   },
   components: {
@@ -52,15 +60,16 @@ export default {
 .row{
   padding:30px 0px 0px 0px;
 }
-.VueCarousel-slide {
+.vueCarousel-slide {
   position: relative;
   background: linear-gradient(#231f20,#fff);
   color: #fff;
-  width: 100%;
+  width: 80%;
+  height: 100%;
   z-index: 1;
   font-family: Arial;
   font-size: 24px;
   text-align: center;
-  min-height: 100px;
+  min-height: 10rem;
 }
 </style>

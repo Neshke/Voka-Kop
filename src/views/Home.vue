@@ -86,7 +86,11 @@
         <div class="row">
           <div class="col-sm">
             <div class="right-p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet urna vel metus suscipit, in interdum tortor dapibus. Suspendisse faucibus ante vitae euismod volutpat. Sed quis purus ac nibh hendrerit lobortis. Sed consequat, nisl non convallis aliquam, enim risus scelerisque orci, nec finibus lorem nisl elementum ipsum. Aliquam pretium elit eget sem efficitur, a tristique arcu aliquam. Curabitur suscipit purus vitae dolor pellentesque gravida. Maecenas mi justo, laoreet sed feugiat quis, efficitur vitae libero. Pellentesque dictum, erat sed varius volutpat, mi ante consectetur enim, ac gravida purus risus ac augue. Morbi semper metus a aliquet faucibus. Donec ultricies eget nisl non condimentum. Nunc porttitor metus sem, luctus venenatis urna dignissim vitae. Suspendisse euismod placerat turpis, eu pellentesque leo aliquet at. In eu posuere dui. Aliquam semper mi ac euismod rhoncus. Nullam quis massa quis sem laoreet suscipit a a arcu. Cras dignissim nibh ultricies justo laoreet rhoncus.
+              U proteklom periodu preduzeće se sepcijalizovalo na poslovima
+iskopa i daljinskog podbušenja za potrebe polaganja podzemnih kablova za optičke, gasne, ptt kao i vodovodne instalacije.
+            </div>
+            <div class="right-p">
+              Akcenat je takođe na izvodima magistralnih voda, kućnih priključaka, izvršavanje radova kako na iskopu, daljinskom pobušenju tako i na izgradnji šahtova, asfaltiranje, polaganja Behaton kocki tako i nad proizvodima po objektima do krajnjih korisnika
             </div>
           </div>
         </div>
@@ -184,10 +188,10 @@ body {
   text-justify: inter-cluster;
   font-size:1.1em;
   font-weight: 600;
-  margin-left: 20px;
-  margin-top: 20px;
   border-radius: 10px;
-  padding: 10px;
+  padding-bottom: 2rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 .open {
   transform: translateX(150px);

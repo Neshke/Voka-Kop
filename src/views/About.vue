@@ -12,15 +12,16 @@ Z <template >
           <div class="col-sm-6" style="text-align:left;padding:60px;">Građevinsko preduzeće "Voka Kop", sa sedištem u Smederevu je osnovano 2004. godine i već dugi niz godina posluje kao izvođač radova na različitim neurbanim i urbanim lokacijama širom Srbije. 
             <br><br>Organizacija koja i dan danas uspešno posluje, opremljena je svim neophodnim tehničko-tehnološkim i ljudskim resursima kako bi radovi bili uspešno izvedeni. </div>
         </div>
-        <hr>
-        <h1>Kako do nas?</h1> 
-        <div class="row" >
-          
-        </div>
-        <br>
-        
-        <div class="row" >
-        
+        <div class="row" style="padding-top:0px" >
+          <div class="col-sm-6" style="text-align:left;padding:60px;">Preduzeće je otvoreno za svaki vid saradnje i spremno je da svaki povereni
+posao izvede profesionalno i u skladu sa vremenskim rokovima.
+<br>
+<br>
+Tokom niza godina poslovanja formirano je pet ekipa za iskop i dve
+
+ekipe za daljinsko horizontalno podbušenje, što čini oko 35 radnika plus sezonski
+po potrebi. </div>
+          <div class="col-sm-6" style="text-align:right;"><img :src="cev1" alt="" style="width:100%;border-radius:10px;"></div>
         </div>
       </div>
     </div>
@@ -34,9 +35,9 @@ import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
 //pictures
 import Logo1 from '@/assets/images/workers.jpg';
-import Logo2 from '@/assets/images/promont.png';
 import Logo3 from '@/assets/images/millennium_logo.png';
 import Logo4 from '@/assets/images/setec.png';
+import cev1 from '@/assets/images/cev1.jpg';
 
 export default {
   name: 'Home',
@@ -44,8 +45,8 @@ export default {
     return {
       mobileView: true,
       showNav: true,
+      cev1:cev1,
       slideOne:Logo1,
-      slideTwo:Logo2,
       slideThree:Logo3,
       slideFour:Logo4,
       displayPhoto:Logo1,

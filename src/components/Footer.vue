@@ -11,11 +11,11 @@
                 <div class="row">
                     <div class="col-sm-2">
                         <h5><strong>Telefon</strong></h5>
-                        <p>+381 62 281 493</p>
+                        <a href="tel:+38162281493">+381 62 281 493</a>
                     </div>
                     <div class="col-sm-2">
                         <h5><strong>Email</strong></h5>
-                        <p>nenad@adresa.rs</p>
+                        <a href="mailto:vokakop@gmail.com">vokakop@gmail.com</a>
                     </div>
                     <div class="col-sm-12">
                         <p>Autorska prava i zaštita podataka</p>
@@ -42,5 +42,8 @@
 .footer-p{
     font-size: 0.7em;
     opacity: 0.6;
+}
+.a:link{
+    color: white;
 }
 </style>
