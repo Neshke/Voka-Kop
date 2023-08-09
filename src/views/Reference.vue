@@ -216,6 +216,11 @@ br{
   height:80px;
   cursor: pointer;
 }
+@media screen and (max-width:900px) {
+  .logoSlika{
+    height: 120px;
+  }
+}
 #display-menu{
   height:70px;
   object-fit: fill;
