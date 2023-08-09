@@ -16,23 +16,23 @@
             <div class="col-sm-12" style="text-align:center;"><h3>Stupite u kontakt sa nama</h3></div><hr>
               <form action="/about">
                 <div class="row" style="padding-top:0px" >
-                  <div class="col-sm-6" style="text-align:right;">
-                  <input type="text" id="fname" name="fname" placeholder="Ime" style="width:150px" v-model="form.firstName"><br><br>
+                  <div class="col-lg-6 col-sm-12" >
+                  <input type="text" id="fname" name="fname" placeholder="Ime" style="width:100%" v-model="form.firstName"><br><br>
                   </div>
-                  <div class="col-sm-6" style="text-align:left;">
-                  <input type="text" id="lname" name="lname" placeholder="Prezime" style="width:150px" v-model="form.lastName"><br><br>
+                  <div class="col-md-6 col-sm-12" style="">
+                  <input type="text" id="lname" name="lname" placeholder="Prezime" style="width:100%" v-model="form.lastName"><br><br>
                   </div>
-                  <div class="col-sm-6" style="text-align:right;">
-                  <input type="text" id="fname" name="fname" placeholder="Email" style="width:150px" v-model="form.email"><br><br>
+                  <div class="col-md-6 col-sm-12" style="">
+                  <input type="text" id="fname" name="fname" placeholder="Email" style="width:100%" v-model="form.email"><br><br>
                   </div>
-                  <div class="col-sm-6" style="text-align:left;">
-                  <input type="text" id="lname" name="lname" placeholder="Kontakt telefon" style="width:150px" v-model="form.phone"><br><br>
+                  <div class="col-md-6 col-sm-12" style="">
+                  <input type="text" id="lname" name="lname" placeholder="Kontakt telefon" style="width:100%" v-model="form.phone"><br><br>
                   </div>
-                  <div class="col-sm-12" style="text-align:center;">
-                    <textarea id="subject" name="subject" placeholder="Kako možemo da vam pomognemo?" style="height:150px; width:325px" v-model="form.message"></textarea>
+                  <div class="col-lg-12" style="text-align:center;">
+                    <textarea id="subject" name="subject" placeholder="Kako možemo da vam pomognemo?" style="height:150px; width:100%" v-model="form.message"></textarea>
                   </div>
-                  <div class="col-sm-12" style="text-align:center;">
-                  <input type="submit" value="Submit" style="text-align:center; width:150px" @click.prevent="submitForm">
+                  <div class="col-lg-12" style="text-align:center;">
+                  <input type="submit" value="Submit" style="text-align:center; width:100%" @click.prevent="submitForm">
                   </div>
                 </div>
               </form>
