@@ -190,8 +190,6 @@ body {
   font-weight: 600;
   border-radius: 10px;
   padding-bottom: 2rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
 }
 .open {
   transform: translateX(150px);
