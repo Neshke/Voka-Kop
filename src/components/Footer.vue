@@ -19,7 +19,7 @@
                     </div>
                     <div class="col-sm-12">
                         <p>Autorska prava i zaštita podataka</p>
-                        <p class="footer-p">2021 &copy; Voka Kop doo sva prava zadržana na sadržaj ove stranice.</p>
+                        <p class="footer-p">{{currentYear.getYear() + 1900}} &copy; Voka Kop doo sva prava zadržana na sadržaj ove stranice.</p>
                     </div>
                 </div>
             </div>
@@ -27,7 +27,17 @@
     </div>
 </template>
 <script>
-
+export default{
+    name:'Footer',
+    data:() =>{
+        return{
+            currentYear: new Date(),
+        }
+    },
+    created()   {
+        console.log(this.currentYear.getYear() + 1900);
+    }
+}
 </script>
 <style>
 .footer {
