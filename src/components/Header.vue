@@ -4,7 +4,7 @@
         <a href="mailto:vokakop@gmail.com" class="quick-info-left">✉ vokakop@gmail.com</a>
         <a href="tel:+38162281493" class="quick-info-right">☎ +381 62 281 493</a>
       </div>
-    <div class="content-header"  >
+    <div class="content-header">
       <div class="top-bar">
         <div id="navigation-icon" v-if="mobileView"
           @click="showNav = !showNav; " :class="{'openNav':showNav}">
@@ -33,7 +33,9 @@ export default {
     MobileNav,
   },
   created(){
-    // this.handleView();
+    if(window.innerWidth < 900){
+      this.mobileView = true
+    }
     window.addEventListener("resize", () => {
     if (window.innerWidth < 900) {
       this.mobileView = true
