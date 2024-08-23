@@ -184,7 +184,8 @@ body {
 }
 
 .slider {
-  width: calc(100%);
+  display: flex;
+  justify-content: center;
   height: 410px;
   padding: 5px;
   background: url("../assets/images/repeating-triangles.svg");

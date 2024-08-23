@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="slider-home-carousel">
     <Carousel
       :per-page="1"
       :mouse-drag="true"
@@ -16,9 +16,6 @@
         <img :src="slideTwo" alt="" id="slika" />
       </Slide>
       <Slide class="vueCarousel-slide">
-        <img :src="slideThree" alt="" id="slika" />
-      </Slide>
-      <Slide class="vueCarousel-slide">
         <img :src="slideFour" alt="" id="slika" />
       </Slide>
       <Slide class="vueCarousel-slide">
@@ -31,7 +28,6 @@
 import { Carousel, Slide } from "vue-carousel";
 import Slika1 from "@/assets/images/water 2.jpg";
 import Slika2 from "@/assets/images/carousel-pipes-2.jpeg";
-import Slika3 from "@/assets/images/gasovod.jpg";
 import Slika4 from "@/assets/images/carusel-slide-pipes.jpeg";
 import Cev2 from "@/assets/images/cev2.jpg";
 
@@ -40,7 +36,6 @@ export default {
     return {
       slideOne: Slika1,
       slideTwo: Slika2,
-      slideThree: Slika3,
       slideFour: Cev2,
       slideFive: Slika4,
     };
@@ -63,7 +58,7 @@ export default {
 }
 .vueCarousel-slide {
   position: relative;
-  background: linear-gradient(#231f20, #fff);
+  background: transparent;
   color: #fff;
   width: 80%;
   height: 100%;
@@ -72,5 +67,9 @@ export default {
   font-size: 24px;
   text-align: center;
   min-height: 10rem;
+}
+.slider-home-carousel {
+  max-width: 80rem;
+  min-width: 20rem;
 }
 </style>

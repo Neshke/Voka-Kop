@@ -205,5 +205,16 @@ br {
   text-align: left;
   padding: 5px;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+.col-sm-6 {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
 </style>
 -

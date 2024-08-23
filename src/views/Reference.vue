@@ -253,15 +253,13 @@ br {
 .Reference-slide {
   position: relative;
   color: #fff;
-  background-image: transparent;
+  background-color: transparent;
   width: 100%;
   z-index: 1;
   font-family: Arial;
   font-size: 24px;
   text-align: center;
   min-height: 50px;
-
-  border-radius: 1rem;
 }
 .logoSlika {
   object-fit: contain;
