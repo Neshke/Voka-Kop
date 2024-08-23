@@ -19,8 +19,7 @@
     "vue-axios": "^3.3.7",
     "vue-carousel": "^0.18.0",
     "vue-loader": "^15.11.1",
-    "vue-router": "^3.5.2",
-    "webpack": "^4.0.0"
+    "vue-router": "^3.5.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
