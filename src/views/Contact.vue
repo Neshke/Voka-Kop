@@ -273,4 +273,7 @@ br {
   text-align: left;
   padding: 5px;
 }
+.col-sm-6 {
+  flex-direction: column;
+}
 </style>
