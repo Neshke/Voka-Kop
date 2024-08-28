@@ -60,7 +60,6 @@ export default {
   position: relative;
   background: transparent;
   color: #fff;
-  width: 80%;
   height: 100%;
   z-index: 1;
   font-family: Arial;
@@ -69,7 +68,6 @@ export default {
   min-height: 10rem;
 }
 .slider-home-carousel {
-  max-width: 80rem;
-  min-width: 20rem;
+  width: 80rem;
 }
 </style>
