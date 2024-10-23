@@ -145,6 +145,12 @@ body {
 .row {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .col-sm-4 {
+    text-align: justify !important;
+  }
 }
 .contents {
   position: relative;
