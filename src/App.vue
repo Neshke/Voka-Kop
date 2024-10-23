@@ -1,27 +1,33 @@
-
 <template>
   <div id="app">
-    <router-view/>
+    <router-view />
   </div>
 </template>
+<script>
+export default {
+  name: "App",
+  mounted() {
+    document.title = "Voka Kop D.O.O";
+  },
+};
+</script>
 <style>
 body {
-    animation: fadeInAnimation ease 1.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
   }
-  @keyframes fadeInAnimation {
-  0%    {
-        opacity: 0;
-        }
-  100%  {
-        opacity: 1;
-        }
+  100% {
+    opacity: 1;
   }
+}
 @font-face {
   font-family: "Autobus";
-  src: local("Autobus"),
-  url(./assets/fonts/Autobusbold.ttf) format("truetype");
+  src: local("Autobus"), url(./assets/fonts/Autobusbold.ttf) format("truetype");
 }
 #app {
   font-family: "Autobus";

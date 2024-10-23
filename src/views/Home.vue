@@ -217,6 +217,11 @@ body {
   display: flex;
   margin-left: 10rem;
 }
+@media screen and (max-width: 600px) {
+  .above-slider-list {
+    margin-left: 0;
+  }
+}
 .slider {
   display: flex;
   justify-content: center;
