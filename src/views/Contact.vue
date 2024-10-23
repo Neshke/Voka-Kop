@@ -94,6 +94,8 @@
 </template>
 
 <script>
+import queryString from "query-string";
+import axios from "axios";
 //components
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
@@ -164,14 +166,19 @@ export default {
       this.displayPhoto = this.slideFour;
       this.displayPhotoAlt = "Cetvrti";
     },
-    submitForm() {
-      this.$axios
-        .post("http://localhost/mail/mailto.php", this.form)
-        .then((response) => {
-          console.log(response);
+    async submitForm() {
+      console.log(this.form);
+      await axios
+        .post(
+          "https://www.vokakop.com/mailerApp.php",
+          queryString.stringify(this.form)
+        )
+        .then(() => {
+          alert("Form submitted successfully");
           this.errors = [];
         })
         .catch((error) => {
+          alert("The form has errors");
           this.errors = error.response.data.message;
         });
     },
