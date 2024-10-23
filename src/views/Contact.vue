@@ -11,10 +11,10 @@
             </div>
             <hr />
             <div class="col-sm-12" style="text-align: left; margin-left: 20px">
-              <bold style="font-size: 20px">Telefon: </bold>062/281-493
+              <strong style="font-size: 20px">Telefon: </strong>062/281-493
             </div>
             <div class="col-sm-12" style="text-align: left; margin-left: 20px">
-              <bold style="font-size: 20px">Email: </bold>vokakop@gmail.com
+              <strong style="font-size: 20px">Email: </strong>vokakop@gmail.com
             </div>
           </div>
           <div class="col-sm-6">
@@ -30,7 +30,7 @@
                     id="fname"
                     name="fname"
                     placeholder="Ime"
-                    style="width: 100%"
+                    class="input-style"
                     v-model="form.firstName"
                   /><br /><br />
                 </div>
@@ -40,7 +40,7 @@
                     id="lname"
                     name="lname"
                     placeholder="Prezime"
-                    style="width: 100%"
+                    class="input-style"
                     v-model="form.lastName"
                   /><br /><br />
                 </div>
@@ -50,7 +50,7 @@
                     id="fname"
                     name="fname"
                     placeholder="Email"
-                    style="width: 100%"
+                    class="input-style"
                     v-model="form.email"
                   /><br /><br />
                 </div>
@@ -60,7 +60,7 @@
                     id="lname"
                     name="lname"
                     placeholder="Kontakt telefon"
-                    style="width: 100%"
+                    class="input-style"
                     v-model="form.phone"
                   /><br /><br />
                 </div>
@@ -194,6 +194,9 @@ body {
   font-family: "Segoe UI", Tahoma;
   background-color: #231f20;
 }
+.input-style {
+  width: 100%;
+}
 #reference {
   width: 100%;
   height: 100%;
@@ -201,7 +204,7 @@ body {
 .contents {
   position: relative;
   width: 100%;
-  background-image: url("../assets/images/repeating-triangles.svg");
+  background-color: white;
   padding: 20px;
   height: 100%;
 }
@@ -209,7 +212,7 @@ body {
   width: 100%;
   height: 410px;
   padding: 5px;
-  background-image: url("../assets/images/repeating-triangles.svg");
+  background-color: white;
   overflow: hidden;
 }
 .reference-logo {

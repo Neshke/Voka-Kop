@@ -207,7 +207,7 @@ body {
 .contents {
   position: relative;
   width: 100%;
-  background-image: url("../assets/images/repeating-triangles.svg");
+  background-color: white;
   padding: 20px;
   height: 100%;
 }
@@ -215,14 +215,14 @@ body {
   width: 100%;
   height: 410px;
   padding: 5px;
-  background-image: url("../assets/images/repeating-triangles.svg");
+  background-color: white;
   overflow: hidden;
 }
 .reference-carousel {
   padding-top: 0px;
   border: 5px solid #feca0a;
   border-radius: 1rem;
-  background-image: url("../assets/images/wavey-fingerprint.svg");
+  background-color: white;
 }
 .carousel {
   padding: 0 !important;

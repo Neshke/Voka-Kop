@@ -26,10 +26,10 @@
 </template>
 <script>
 import { Carousel, Slide } from "vue-carousel";
-import Slika1 from "@/assets/images/water 2.jpg";
-import Slika2 from "@/assets/images/carousel-pipes-2.jpeg";
-import Slika4 from "@/assets/images/carusel-slide-pipes.jpeg";
-import Cev2 from "@/assets/images/cev2.jpg";
+import Slika1 from "@/assets/images/izrada-sahtova-infrastruktura.jpg";
+import Slika2 from "@/assets/images/asfaltiranje-gradiliste.jpg";
+import Slika4 from "@/assets/images/masinski-iskopi-gradjevinski-radovi.jpg";
+import Cev2 from "@/assets/images/pexels-alejandro-perez-3008241-4575147.jpg";
 
 export default {
   data() {

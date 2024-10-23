@@ -5,7 +5,32 @@
       <img src="../assets/images/logo.png" alt="logo" class="logo-img" />
       <p class="mt-3">Dobrodošli</p>
     </div>
-    <div style="background-color: #fff">
+    <div class="above-slider-div">
+      <h1>Građevinsko preduzeće "Voka Kop"</h1>
+      <p>Vaš pouzdan partner za izgradnju i infrastrukturne projekte</p>
+      <p>
+        Sa dugogodišnjim iskustvom i izvanrednom reputacijom, "Voka Kop" iz
+        Smedereva od 2004. godine pruža vrhunske usluge u izvođenju građevinskih
+        radova na urbanim i neurbanim lokacijama širom Srbije. Naša
+        specijalizacija, podržana savremenom mehanizacijom i
+        visokokvalifikovanim timom, garantuje uspešnu realizaciju svih
+        projekata, od početka do kraja.
+      </p>
+      <h2 style="float: left; padding-left: 2rem">Naša rešenja uključuju:</h2>
+      <br />
+      <div class="above-slider-list">
+        <ul>
+          <li>Mašinski iskop i zemljane radove</li>
+          <li>Daljinsko podbušenje za podzemne instalacije</li>
+          <li>Izgradnju šahtova, asfaltiranje i polaganje behaton kocki</li>
+          <li>Kompletnu distribuciju instalacija do krajnjih korisnika</li>
+        </ul>
+      </div>
+      <p>
+        Ako tražite partnera koji će ispuniti vaše zahteve u najkraćim rokovima
+        uz visok nivo profesionalnosti, "Voka Kop" je pravi izbor za vas.
+        Kontaktirajte nas za detaljnu ponudu koja odgovara vašim potrebama.
+      </p>
       <div class="slider">
         <Slider />
       </div>
@@ -31,7 +56,7 @@
           <div class="col-sm">
             <div class="three-p">
               <p class="p1">...kao i sa iskustvom više od</p>
-              15
+              {{ godineIskustva }}
               <p class="p1">godina rada u građevinskoj industriji</p>
             </div>
           </div>
@@ -46,7 +71,7 @@
       <div class="container">
         <div class="row" style="margin-top: 110px">
           <div class="col-sm-12" style="color: #fff; text-align: right">
-            <h1 style="font-size: 2.5em; padding-bottom: 70px">
+            <h1 class="transparent-div-h1">
               Više od 5000km ugrađene gasne i vodovodne mreže širom Srbije
             </h1>
           </div>
@@ -140,6 +165,7 @@ export default {
       s1: Slika1,
       s2: Slika2,
       s3: Slika3,
+      godineIskustva: 20,
     };
   },
   components: {
@@ -155,7 +181,6 @@ export default {
       this.showNav = !this.showNav;
     },
   },
-
   created() {
     this.handleView();
   },
@@ -180,15 +205,24 @@ body {
   position: relative;
   width: 100%;
   padding: 20px;
-  background-image: url("../assets/images/repeating-triangles.svg");
+  background-color: white;
 }
-
+.above-slider-div {
+  background-color: #fff;
+  padding: 2rem;
+}
+.above-slider-list {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  margin-left: 10rem;
+}
 .slider {
   display: flex;
   justify-content: center;
   height: 410px;
   padding: 5px;
-  background: url("../assets/images/repeating-triangles.svg");
+  background: white;
   overflow: hidden;
 }
 .transparent-div {
@@ -275,5 +309,15 @@ hr {
   color: #fff;
   border-bottom-color: #ff5858;
   border-color: #fff;
+}
+.transparent-div-h1 {
+  font-size: 2.5em;
+  width: fit-content;
+  background-color: #fff;
+  color: #231f20;
+  border: 2px;
+  border-radius: 10px;
+  opacity: 0.7;
+  padding: 1rem;
 }
 </style>

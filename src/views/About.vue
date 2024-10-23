@@ -14,25 +14,55 @@ Z
               style="width: 100%; border-radius: 10px"
             />
           </div>
-          <div class="col-sm-6" style="text-align: left; padding: 60px">
-            Građevinsko preduzeće "Voka Kop", sa sedištem u Smederevu je
-            osnovano 2004. godine i već dugi niz godina posluje kao izvođač
-            radova na različitim neurbanim i urbanim lokacijama širom Srbije.
-            <br /><br />Organizacija koja i dan danas uspešno posluje,
-            opremljena je svim neophodnim tehničko-tehnološkim i ljudskim
-            resursima kako bi radovi bili uspešno izvedeni.
+          <div class="col-sm-4" style="text-align: left; padding: 60px">
+            <p>
+              Građevinsko preduzeće "Voka Kop" je osnovano 2004. godine u
+              Smederevu, i od tada smo se afirmisali kao lideri u izvođenju
+              specijalizovanih građevinskih radova na području Srbije. Sa
+              fokusom na kvalitet, efikasnost i poštovanje rokova, izvodimo sve
+              vrste radova u oblasti mašinskog iskopa i daljinskog podbušenja za
+              polaganje podzemnih kablova, gasnih, PTT i vodovodnih instalacija.
+            </p>
+            <br />
+            <p>Tokom godina, postali smo prepoznatljivi po:</p>
+            <ul>
+              <li>
+                Iskustvu i stručnosti u izgradnji magistralnih vodova i kućnih
+                priključaka
+              </li>
+              <li>
+                Kompletnim uslugama koje obuhvataju iskop, daljinsko podbušenje,
+                izgradnju šahtova, asfaltiranje, polaganje behaton kocki i
+                distribuciju instalacija
+              </li>
+              <li>
+                Savremenoj opremi, uključujući Ditch Witch 2020 mašine za
+                podbušenje, bagere od 3 do 7 tona, kao i kamione i prikolice za
+                sve vrste terena
+              </li>
+            </ul>
           </div>
         </div>
         <div class="row" style="padding-top: 0px">
-          <div class="col-sm-6" style="text-align: left; padding: 60px">
-            Preduzeće je otvoreno za svaki vid saradnje i spremno je da svaki
-            povereni posao izvede profesionalno i u skladu sa vremenskim
-            rokovima.
-            <br />
-            <br />
-            Tokom niza godina poslovanja formirano je pet ekipa za iskop i dve
-            ekipe za daljinsko horizontalno podbušenje, što čini oko 35 radnika
-            plus sezonski po potrebi.
+          <div class="col-sm-4" style="text-align: left; padding: 60px">
+            <p>
+              Naša kompanija poseduje pet specijalizovanih ekipa za iskop i dve
+              za daljinsko podbušenje, sa timom od preko 35 iskusnih radnika, uz
+              dodatnu podršku sezonske radne snage. Opremljeni smo najnovijom
+              tehnologijom, što nam omogućava efikasnu realizaciju svakog
+              projekta, bez obzira na njegovu složenost.
+            </p>
+            <p>
+              Voka Kop nudi profesionalizam na najvišem nivou, poštovanje svih
+              rokova i kompletna rešenja za infrastrukturne projekte.
+              Specijalizovani smo za polaganje optičkih kablova, gasnih i PTT
+              instalacija, kao i vodovodnih sistema, pružajući usluge koje
+              odgovaraju najvišim standardima građevinske industrije.
+            </p>
+            <p>
+              Za sve vaše projekte – od inicijalne faze do završnih radova –
+              Voka Kop je vaša sigurna adresa.
+            </p>
           </div>
           <div class="col-sm-6" style="text-align: right">
             <img :src="cev1" alt="" style="width: 100%; border-radius: 10px" />
@@ -49,10 +79,10 @@ Z
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 //pictures
-import Logo1 from "@/assets/images/workers.jpg";
 import Logo3 from "@/assets/images/millennium_logo.png";
 import Logo4 from "@/assets/images/setec.png";
-import cev1 from "@/assets/images/cev1.jpg";
+import about1 from "@/assets/images/postavljanje-behaton-kocki.jpg";
+import about2 from "@/assets/images/polaganje-gasnih-instalacija.jpg";
 
 export default {
   name: "Home",
@@ -60,12 +90,10 @@ export default {
     return {
       mobileView: true,
       showNav: true,
-      cev1: cev1,
-      slideOne: Logo1,
+      cev1: about1,
+      slideOne: about2,
       slideThree: Logo3,
       slideFour: Logo4,
-      displayPhoto: Logo1,
-      displayPhotoAlt: "Prvi",
     };
   },
   components: {
@@ -91,22 +119,6 @@ export default {
     redirectFour() {
       window.location.href = "http://www.setec-ec.rs/";
     },
-    changePictureOne() {
-      this.displayPhoto = this.slideOne;
-      this.displayPhotoAlt = "Prvi";
-    },
-    changePictureTwo() {
-      this.displayPhoto = this.slideTwo;
-      this.displayPhotoAlt = "Drugi";
-    },
-    changePictureThree() {
-      this.displayPhoto = this.slideThree;
-      this.displayPhotoAlt = "Treći";
-    },
-    changePictureFour() {
-      this.displayPhoto = this.slideFour;
-      this.displayPhotoAlt = "Cetvrti";
-    },
   },
 
   created() {
@@ -130,10 +142,14 @@ body {
   width: 100%;
   height: 100%;
 }
+.row {
+  display: flex;
+  justify-content: center;
+}
 .contents {
   position: relative;
   width: 100%;
-  background-image: url("../assets/images/repeating-triangles.svg");
+  background-color: white;
   padding: 20px;
   height: 100%;
 }
@@ -141,7 +157,7 @@ body {
   width: 100%;
   height: 410px;
   padding: 5px;
-  background-image: url("../assets/images/repeating-triangles.svg");
+  background-color: white;
   overflow: hidden;
 }
 .reference-logo {
