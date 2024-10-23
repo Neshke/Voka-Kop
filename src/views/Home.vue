@@ -325,4 +325,10 @@ hr {
   opacity: 0.7;
   padding: 1rem;
 }
+@media screen and (max-width: 600px) {
+  .transparent-div-h1 {
+    font-size: 1.5em;
+  }
+  
+}
 </style>
