@@ -1,24 +1,20 @@
 # Voka-Kop
 
-## Project setup
-```
+Corporate website for **Voka Kop**, a construction company. Showcases services and completed projects.
+
+---
+
+## Tech Stack
+
+- **Vue.js** — Frontend framework
+- **Tailwind CSS** — Styling
+
+---
+
+## Development
+
+```bash
 npm install
+npm run serve   # development
+npm run build   # production
 ```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
